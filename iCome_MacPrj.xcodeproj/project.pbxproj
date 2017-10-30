@@ -19,6 +19,9 @@
 		4230FFB91FA5F523008DF37F /* ICInputTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4230FFB81FA5F523008DF37F /* ICInputTextView.m */; };
 		426E896C1FA6ED1600BE665B /* ICMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 426E896B1FA6ED1600BE665B /* ICMessageView.m */; };
 		426E896F1FA6ED5100BE665B /* ICChatBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 426E896E1FA6ED5100BE665B /* ICChatBoxView.m */; };
+		426E89911FA73C9B00BE665B /* ICMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 426E89901FA73C9B00BE665B /* ICMenuView.m */; };
+		426E89941FA740E700BE665B /* ICInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 426E89931FA740E700BE665B /* ICInputView.m */; };
+		426E89971FA742FE00BE665B /* ICInputMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 426E89961FA742FE00BE665B /* ICInputMenuView.m */; };
 		CFB9E398039397CD0F647423 /* libPods-iCome_MacPrj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 236A58750EA3B37611B559DD /* libPods-iCome_MacPrj.a */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +103,12 @@
 		426E898C1FA6F55C00BE665B /* NSWindow+Dejal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+Dejal.m"; sourceTree = "<group>"; };
 		426E898D1FA6F55D00BE665B /* NSTextField+Dejal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTextField+Dejal.h"; sourceTree = "<group>"; };
 		426E898E1FA6F55D00BE665B /* NSPopUpButton+Dejal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSPopUpButton+Dejal.m"; sourceTree = "<group>"; };
+		426E898F1FA73C9B00BE665B /* ICMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICMenuView.h; sourceTree = "<group>"; };
+		426E89901FA73C9B00BE665B /* ICMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICMenuView.m; sourceTree = "<group>"; };
+		426E89921FA740E700BE665B /* ICInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICInputView.h; sourceTree = "<group>"; };
+		426E89931FA740E700BE665B /* ICInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICInputView.m; sourceTree = "<group>"; };
+		426E89951FA742FE00BE665B /* ICInputMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICInputMenuView.h; sourceTree = "<group>"; };
+		426E89961FA742FE00BE665B /* ICInputMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICInputMenuView.m; sourceTree = "<group>"; };
 		C03FE56163CEF0A6F383B684 /* Pods-iCome_MacPrj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCome_MacPrj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iCome_MacPrj/Pods-iCome_MacPrj.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -220,12 +229,18 @@
 		4230FFAC1FA56498008DF37F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4230FFB71FA5F523008DF37F /* ICInputTextView.h */,
-				4230FFB81FA5F523008DF37F /* ICInputTextView.m */,
 				426E896A1FA6ED1600BE665B /* ICMessageView.h */,
 				426E896B1FA6ED1600BE665B /* ICMessageView.m */,
 				426E896D1FA6ED5100BE665B /* ICChatBoxView.h */,
 				426E896E1FA6ED5100BE665B /* ICChatBoxView.m */,
+				426E898F1FA73C9B00BE665B /* ICMenuView.h */,
+				426E89901FA73C9B00BE665B /* ICMenuView.m */,
+				426E89921FA740E700BE665B /* ICInputView.h */,
+				426E89931FA740E700BE665B /* ICInputView.m */,
+				426E89951FA742FE00BE665B /* ICInputMenuView.h */,
+				426E89961FA742FE00BE665B /* ICInputMenuView.m */,
+				4230FFB71FA5F523008DF37F /* ICInputTextView.h */,
+				4230FFB81FA5F523008DF37F /* ICInputTextView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -484,8 +499,11 @@
 				4230FFB61FA565B1008DF37F /* ICMainViewController.m in Sources */,
 				4230FFB91FA5F523008DF37F /* ICInputTextView.m in Sources */,
 				4230FF871FA56249008DF37F /* main.m in Sources */,
+				426E89911FA73C9B00BE665B /* ICMenuView.m in Sources */,
+				426E89941FA740E700BE665B /* ICInputView.m in Sources */,
 				4230FFB01FA5651F008DF37F /* ICLogInViewController.m in Sources */,
 				4230FF7C1FA56249008DF37F /* AppDelegate.m in Sources */,
+				426E89971FA742FE00BE665B /* ICInputMenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
