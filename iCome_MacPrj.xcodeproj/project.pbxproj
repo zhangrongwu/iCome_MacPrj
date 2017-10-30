@@ -17,6 +17,8 @@
 		4230FFB31FA56582008DF37F /* ICWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4230FFB21FA56582008DF37F /* ICWindowController.m */; };
 		4230FFB61FA565B1008DF37F /* ICMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4230FFB51FA565B1008DF37F /* ICMainViewController.m */; };
 		4230FFB91FA5F523008DF37F /* ICInputTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4230FFB81FA5F523008DF37F /* ICInputTextView.m */; };
+		426E896C1FA6ED1600BE665B /* ICMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 426E896B1FA6ED1600BE665B /* ICMessageView.m */; };
+		426E896F1FA6ED5100BE665B /* ICChatBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 426E896E1FA6ED5100BE665B /* ICChatBoxView.m */; };
 		CFB9E398039397CD0F647423 /* libPods-iCome_MacPrj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 236A58750EA3B37611B559DD /* libPods-iCome_MacPrj.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,40 @@
 		4230FFB81FA5F523008DF37F /* ICInputTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICInputTextView.m; sourceTree = "<group>"; };
 		4230FFBD1FA5F802008DF37F /* ICHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICHeader.pch; sourceTree = "<group>"; };
 		4230FFBE1FA5F81C008DF37F /* ICInputProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICInputProtocol.h; sourceTree = "<group>"; };
+		426E896A1FA6ED1600BE665B /* ICMessageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICMessageView.h; sourceTree = "<group>"; };
+		426E896B1FA6ED1600BE665B /* ICMessageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICMessageView.m; sourceTree = "<group>"; };
+		426E896D1FA6ED5100BE665B /* ICChatBoxView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICChatBoxView.h; sourceTree = "<group>"; };
+		426E896E1FA6ED5100BE665B /* ICChatBoxView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICChatBoxView.m; sourceTree = "<group>"; };
+		426E89711FA6F55A00BE665B /* NSImage+Dejal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Dejal.m"; sourceTree = "<group>"; };
+		426E89721FA6F55A00BE665B /* NSScreen+Dejal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSScreen+Dejal.h"; sourceTree = "<group>"; };
+		426E89731FA6F55A00BE665B /* NSView+Dejal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSView+Dejal.h"; sourceTree = "<group>"; };
+		426E89741FA6F55A00BE665B /* NSImage+Dejal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSImage+Dejal.h"; sourceTree = "<group>"; };
+		426E89751FA6F55A00BE665B /* NSSplitView+Dejal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSSplitView+Dejal.h"; sourceTree = "<group>"; };
+		426E89761FA6F55A00BE665B /* NSToolbar+Dejal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSToolbar+Dejal.m"; sourceTree = "<group>"; };
+		426E89771FA6F55A00BE665B /* NSView+Dejal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSView+Dejal.m"; sourceTree = "<group>"; };
+		426E89781FA6F55A00BE665B /* NSMenu+Dejal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMenu+Dejal.m"; sourceTree = "<group>"; };
+		426E89791FA6F55B00BE665B /* NSTableView+Dejal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTableView+Dejal.m"; sourceTree = "<group>"; };
+		426E897A1FA6F55B00BE665B /* NSViewController+Dejal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSViewController+Dejal.h"; sourceTree = "<group>"; };
+		426E897B1FA6F55B00BE665B /* NSOutlineView+Dejal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSOutlineView+Dejal.m"; sourceTree = "<group>"; };
+		426E897C1FA6F55B00BE665B /* NSToolbar+Dejal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSToolbar+Dejal.h"; sourceTree = "<group>"; };
+		426E897D1FA6F55B00BE665B /* NSMenu+Dejal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMenu+Dejal.h"; sourceTree = "<group>"; };
+		426E897E1FA6F55B00BE665B /* NSProgressIndicator+Dejal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSProgressIndicator+Dejal.h"; sourceTree = "<group>"; };
+		426E897F1FA6F55B00BE665B /* NSTextView+Dejal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTextView+Dejal.m"; sourceTree = "<group>"; };
+		426E89801FA6F55B00BE665B /* NSProgressIndicator+Dejal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSProgressIndicator+Dejal.m"; sourceTree = "<group>"; };
+		426E89811FA6F55B00BE665B /* NSButton+Dejal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSButton+Dejal.m"; sourceTree = "<group>"; };
+		426E89821FA6F55B00BE665B /* NSOutlineView+Dejal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSOutlineView+Dejal.h"; sourceTree = "<group>"; };
+		426E89831FA6F55B00BE665B /* NSScreen+Dejal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSScreen+Dejal.m"; sourceTree = "<group>"; };
+		426E89841FA6F55B00BE665B /* NSTableView+Dejal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTableView+Dejal.h"; sourceTree = "<group>"; };
+		426E89851FA6F55C00BE665B /* NSTextView+Dejal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTextView+Dejal.h"; sourceTree = "<group>"; };
+		426E89861FA6F55C00BE665B /* NSWindow+Dejal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSWindow+Dejal.h"; sourceTree = "<group>"; };
+		426E89871FA6F55C00BE665B /* NSSplitView+Dejal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSSplitView+Dejal.m"; sourceTree = "<group>"; };
+		426E89881FA6F55C00BE665B /* NSViewController+Dejal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSViewController+Dejal.m"; sourceTree = "<group>"; };
+		426E89891FA6F55C00BE665B /* NSTextField+Dejal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTextField+Dejal.m"; sourceTree = "<group>"; };
+		426E898A1FA6F55C00BE665B /* NSPopUpButton+Dejal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSPopUpButton+Dejal.h"; sourceTree = "<group>"; };
+		426E898B1FA6F55C00BE665B /* NSButton+Dejal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSButton+Dejal.h"; sourceTree = "<group>"; };
+		426E898C1FA6F55C00BE665B /* NSWindow+Dejal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+Dejal.m"; sourceTree = "<group>"; };
+		426E898D1FA6F55D00BE665B /* NSTextField+Dejal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTextField+Dejal.h"; sourceTree = "<group>"; };
+		426E898E1FA6F55D00BE665B /* NSPopUpButton+Dejal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSPopUpButton+Dejal.m"; sourceTree = "<group>"; };
 		C03FE56163CEF0A6F383B684 /* Pods-iCome_MacPrj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCome_MacPrj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iCome_MacPrj/Pods-iCome_MacPrj.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,6 +201,7 @@
 		4230FFAA1FA5647D008DF37F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				426E89701FA6F52400BE665B /* Categories */,
 				4230FFBA1FA5F543008DF37F /* Protocol */,
 				4230FFAD1FA5649F008DF37F /* Controller */,
 				4230FFAC1FA56498008DF37F /* View */,
@@ -185,6 +222,10 @@
 			children = (
 				4230FFB71FA5F523008DF37F /* ICInputTextView.h */,
 				4230FFB81FA5F523008DF37F /* ICInputTextView.m */,
+				426E896A1FA6ED1600BE665B /* ICMessageView.h */,
+				426E896B1FA6ED1600BE665B /* ICMessageView.m */,
+				426E896D1FA6ED5100BE665B /* ICChatBoxView.h */,
+				426E896E1FA6ED5100BE665B /* ICChatBoxView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,6 +245,43 @@
 				4230FFBE1FA5F81C008DF37F /* ICInputProtocol.h */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		426E89701FA6F52400BE665B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				426E898B1FA6F55C00BE665B /* NSButton+Dejal.h */,
+				426E89811FA6F55B00BE665B /* NSButton+Dejal.m */,
+				426E89741FA6F55A00BE665B /* NSImage+Dejal.h */,
+				426E89711FA6F55A00BE665B /* NSImage+Dejal.m */,
+				426E897D1FA6F55B00BE665B /* NSMenu+Dejal.h */,
+				426E89781FA6F55A00BE665B /* NSMenu+Dejal.m */,
+				426E89821FA6F55B00BE665B /* NSOutlineView+Dejal.h */,
+				426E897B1FA6F55B00BE665B /* NSOutlineView+Dejal.m */,
+				426E898A1FA6F55C00BE665B /* NSPopUpButton+Dejal.h */,
+				426E898E1FA6F55D00BE665B /* NSPopUpButton+Dejal.m */,
+				426E897E1FA6F55B00BE665B /* NSProgressIndicator+Dejal.h */,
+				426E89801FA6F55B00BE665B /* NSProgressIndicator+Dejal.m */,
+				426E89721FA6F55A00BE665B /* NSScreen+Dejal.h */,
+				426E89831FA6F55B00BE665B /* NSScreen+Dejal.m */,
+				426E89751FA6F55A00BE665B /* NSSplitView+Dejal.h */,
+				426E89871FA6F55C00BE665B /* NSSplitView+Dejal.m */,
+				426E89841FA6F55B00BE665B /* NSTableView+Dejal.h */,
+				426E89791FA6F55B00BE665B /* NSTableView+Dejal.m */,
+				426E898D1FA6F55D00BE665B /* NSTextField+Dejal.h */,
+				426E89891FA6F55C00BE665B /* NSTextField+Dejal.m */,
+				426E89851FA6F55C00BE665B /* NSTextView+Dejal.h */,
+				426E897F1FA6F55B00BE665B /* NSTextView+Dejal.m */,
+				426E897C1FA6F55B00BE665B /* NSToolbar+Dejal.h */,
+				426E89761FA6F55A00BE665B /* NSToolbar+Dejal.m */,
+				426E89731FA6F55A00BE665B /* NSView+Dejal.h */,
+				426E89771FA6F55A00BE665B /* NSView+Dejal.m */,
+				426E897A1FA6F55B00BE665B /* NSViewController+Dejal.h */,
+				426E89881FA6F55C00BE665B /* NSViewController+Dejal.m */,
+				426E89861FA6F55C00BE665B /* NSWindow+Dejal.h */,
+				426E898C1FA6F55C00BE665B /* NSWindow+Dejal.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		43BE58B49B8D3F1925DF8E8D /* Frameworks */ = {
@@ -400,7 +478,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				426E896C1FA6ED1600BE665B /* ICMessageView.m in Sources */,
 				4230FFB31FA56582008DF37F /* ICWindowController.m in Sources */,
+				426E896F1FA6ED5100BE665B /* ICChatBoxView.m in Sources */,
 				4230FFB61FA565B1008DF37F /* ICMainViewController.m in Sources */,
 				4230FFB91FA5F523008DF37F /* ICInputTextView.m in Sources */,
 				4230FF871FA56249008DF37F /* main.m in Sources */,
@@ -564,6 +644,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = HXA3E8963G;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iCome_MacPrj/ICHeader.pch";
 				INFOPLIST_FILE = iCome_MacPrj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ENN.iCome-MacPrj";
@@ -580,6 +662,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = HXA3E8963G;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iCome_MacPrj/ICHeader.pch";
 				INFOPLIST_FILE = iCome_MacPrj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ENN.iCome-MacPrj";
