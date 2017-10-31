@@ -46,6 +46,12 @@
     return self;
 }
 
+
+#pragma mark ICInputProtocol
+- (void)dragDropFilePathList:(NSArray<NSString *> *)filePathList {
+    
+}
+
 -(ICInputMenuView *)menuView {
     if (!_menuView) {
         _menuView = [[ICInputMenuView alloc] initWithFrame:CGRectZero];
@@ -55,10 +61,10 @@
 
 -(ICInputTextView *)inputTextView {
     if (!_inputTextView) {
-        _inputTextView = [[ICInputTextView alloc] initWithFrame:CGRectMake(20, 20, self.frame.size.width - 40, self.frame.size.height - 100)];
+        _inputTextView = [[ICInputTextView alloc] initWithFrame:CGRectMake(20, 20, self.frame.size.width, self.frame.size.height)];
         _inputTextView.inDelegate = self;
         
-        NSScrollView * scrollview = [[NSScrollView alloc] initWithFrame:CGRectMake(20, 20, self.frame.size.width - 40, self.frame.size.height - 100)];
+        NSScrollView * scrollview = [[NSScrollView alloc] initWithFrame:CGRectMake(20, 20, self.frame.size.width, self.frame.size.height)];
         [scrollview setBorderType:NSNoBorder];
         [scrollview setHasVerticalRuler:YES];
         [scrollview setHasHorizontalScroller:YES];

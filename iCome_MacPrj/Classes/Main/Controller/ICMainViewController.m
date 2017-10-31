@@ -11,7 +11,7 @@
 #import "ICChatBoxView.h"
 #import "ICMenuView.h"
 #import "ICInputView.h"
-
+#define WINDOWH
 @interface ICMainViewController ()
 @property (nonatomic, strong)ICMenuView *menuView;
 @property (nonatomic, strong)ICMessageView *messageView;
@@ -75,10 +75,13 @@
         make.bottom.equalTo(self.view.mas_bottom);
         make.height.mas_equalTo(155);
     }];
-}
-#pragma mark ICInputProtocol
-- (void)dragDropFilePathList:(NSArray<NSString *> *)filePathList {
     
+    
+    [[ICNetworkManager sharedInstance] login:@{} success:^(id object) {
+        NSLog(@"ceshi");
+    } failure:^(NSError *error) {
+        NSLog(@"ceshi --- %@", error);
+    }];
 }
 
 -(ICMenuView *)menuView {

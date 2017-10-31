@@ -9,7 +9,12 @@
 #import "ICMenuView.h"
 
 @implementation ICMenuView
-
+-(instancetype)initWithFrame:(NSRect)frameRect {
+    if (self = [super initWithFrame:frameRect]) {
+        
+    }
+    return self;
+}
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
     

@@ -13,7 +13,6 @@
 		4230FF871FA56249008DF37F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4230FF861FA56249008DF37F /* main.m */; };
 		4230FF921FA56249008DF37F /* iCome_MacPrjTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4230FF911FA56249008DF37F /* iCome_MacPrjTests.m */; };
 		4230FF9D1FA56249008DF37F /* iCome_MacPrjUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4230FF9C1FA56249008DF37F /* iCome_MacPrjUITests.m */; };
-		4230FFB01FA5651F008DF37F /* ICLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4230FFAF1FA5651F008DF37F /* ICLogInViewController.m */; };
 		4230FFB31FA56582008DF37F /* ICWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4230FFB21FA56582008DF37F /* ICWindowController.m */; };
 		4230FFB61FA565B1008DF37F /* ICMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4230FFB51FA565B1008DF37F /* ICMainViewController.m */; };
 		4230FFB91FA5F523008DF37F /* ICInputTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4230FFB81FA5F523008DF37F /* ICInputTextView.m */; };
@@ -22,6 +21,9 @@
 		426E89911FA73C9B00BE665B /* ICMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 426E89901FA73C9B00BE665B /* ICMenuView.m */; };
 		426E89941FA740E700BE665B /* ICInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 426E89931FA740E700BE665B /* ICInputView.m */; };
 		426E89971FA742FE00BE665B /* ICInputMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 426E89961FA742FE00BE665B /* ICInputMenuView.m */; };
+		426E89B11FA84FCF00BE665B /* ICLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426E89B01FA84FCF00BE665B /* ICLoginViewController.m */; };
+		426E89B41FA8506600BE665B /* ICNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 426E89B31FA8506600BE665B /* ICNetworkManager.m */; };
+		426E89B71FA850C300BE665B /* ICNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 426E89B61FA850C300BE665B /* ICNetworkHelper.m */; };
 		CFB9E398039397CD0F647423 /* libPods-iCome_MacPrj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 236A58750EA3B37611B559DD /* libPods-iCome_MacPrj.a */; };
 /* End PBXBuildFile section */
 
@@ -59,8 +61,6 @@
 		4230FF981FA56249008DF37F /* iCome_MacPrjUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCome_MacPrjUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4230FF9C1FA56249008DF37F /* iCome_MacPrjUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCome_MacPrjUITests.m; sourceTree = "<group>"; };
 		4230FF9E1FA56249008DF37F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4230FFAE1FA5651F008DF37F /* ICLogInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICLogInViewController.h; sourceTree = "<group>"; };
-		4230FFAF1FA5651F008DF37F /* ICLogInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICLogInViewController.m; sourceTree = "<group>"; };
 		4230FFB11FA56582008DF37F /* ICWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICWindowController.h; sourceTree = "<group>"; };
 		4230FFB21FA56582008DF37F /* ICWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICWindowController.m; sourceTree = "<group>"; };
 		4230FFB41FA565B1008DF37F /* ICMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICMainViewController.h; sourceTree = "<group>"; };
@@ -109,6 +109,12 @@
 		426E89931FA740E700BE665B /* ICInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICInputView.m; sourceTree = "<group>"; };
 		426E89951FA742FE00BE665B /* ICInputMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICInputMenuView.h; sourceTree = "<group>"; };
 		426E89961FA742FE00BE665B /* ICInputMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICInputMenuView.m; sourceTree = "<group>"; };
+		426E89AF1FA84FCF00BE665B /* ICLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICLoginViewController.h; sourceTree = "<group>"; };
+		426E89B01FA84FCF00BE665B /* ICLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICLoginViewController.m; sourceTree = "<group>"; };
+		426E89B21FA8506600BE665B /* ICNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICNetworkManager.h; sourceTree = "<group>"; };
+		426E89B31FA8506600BE665B /* ICNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICNetworkManager.m; sourceTree = "<group>"; };
+		426E89B51FA850C300BE665B /* ICNetworkHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICNetworkHelper.h; sourceTree = "<group>"; };
+		426E89B61FA850C300BE665B /* ICNetworkHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICNetworkHelper.m; sourceTree = "<group>"; };
 		C03FE56163CEF0A6F383B684 /* Pods-iCome_MacPrj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCome_MacPrj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iCome_MacPrj/Pods-iCome_MacPrj.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,8 +183,6 @@
 				4230FF7B1FA56249008DF37F /* AppDelegate.m */,
 				4230FFB11FA56582008DF37F /* ICWindowController.h */,
 				4230FFB21FA56582008DF37F /* ICWindowController.m */,
-				4230FFB41FA565B1008DF37F /* ICMainViewController.h */,
-				4230FFB51FA565B1008DF37F /* ICMainViewController.m */,
 				4230FF801FA56249008DF37F /* Assets.xcassets */,
 				4230FF821FA56249008DF37F /* Main.storyboard */,
 				4230FF851FA56249008DF37F /* Info.plist */,
@@ -210,11 +214,10 @@
 		4230FFAA1FA5647D008DF37F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				426E89A61FA84D4400BE665B /* Service */,
+				426E89991FA80FB000BE665B /* Login */,
+				426E89981FA80F8500BE665B /* Main */,
 				426E89701FA6F52400BE665B /* Categories */,
-				4230FFBA1FA5F543008DF37F /* Protocol */,
-				4230FFAD1FA5649F008DF37F /* Controller */,
-				4230FFAC1FA56498008DF37F /* View */,
-				4230FFAB1FA5648E008DF37F /* Model */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -248,8 +251,8 @@
 		4230FFAD1FA5649F008DF37F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4230FFAE1FA5651F008DF37F /* ICLogInViewController.h */,
-				4230FFAF1FA5651F008DF37F /* ICLogInViewController.m */,
+				4230FFB41FA565B1008DF37F /* ICMainViewController.h */,
+				4230FFB51FA565B1008DF37F /* ICMainViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -297,6 +300,69 @@
 				426E898C1FA6F55C00BE665B /* NSWindow+Dejal.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		426E89981FA80F8500BE665B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4230FFBA1FA5F543008DF37F /* Protocol */,
+				4230FFAD1FA5649F008DF37F /* Controller */,
+				4230FFAC1FA56498008DF37F /* View */,
+				4230FFAB1FA5648E008DF37F /* Model */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		426E89991FA80FB000BE665B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				426E899C1FA80FDF00BE665B /* View */,
+				426E899B1FA80FD700BE665B /* Controller */,
+				426E899A1FA80FCE00BE665B /* Model */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		426E899A1FA80FCE00BE665B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		426E899B1FA80FD700BE665B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				426E89AF1FA84FCF00BE665B /* ICLoginViewController.h */,
+				426E89B01FA84FCF00BE665B /* ICLoginViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		426E899C1FA80FDF00BE665B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		426E89A61FA84D4400BE665B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				426E89A71FA84D5400BE665B /* Network */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		426E89A71FA84D5400BE665B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				426E89B21FA8506600BE665B /* ICNetworkManager.h */,
+				426E89B31FA8506600BE665B /* ICNetworkManager.m */,
+				426E89B51FA850C300BE665B /* ICNetworkHelper.h */,
+				426E89B61FA850C300BE665B /* ICNetworkHelper.m */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		43BE58B49B8D3F1925DF8E8D /* Frameworks */ = {
@@ -495,13 +561,15 @@
 			files = (
 				426E896C1FA6ED1600BE665B /* ICMessageView.m in Sources */,
 				4230FFB31FA56582008DF37F /* ICWindowController.m in Sources */,
+				426E89B41FA8506600BE665B /* ICNetworkManager.m in Sources */,
 				426E896F1FA6ED5100BE665B /* ICChatBoxView.m in Sources */,
 				4230FFB61FA565B1008DF37F /* ICMainViewController.m in Sources */,
 				4230FFB91FA5F523008DF37F /* ICInputTextView.m in Sources */,
+				426E89B71FA850C300BE665B /* ICNetworkHelper.m in Sources */,
 				4230FF871FA56249008DF37F /* main.m in Sources */,
 				426E89911FA73C9B00BE665B /* ICMenuView.m in Sources */,
 				426E89941FA740E700BE665B /* ICInputView.m in Sources */,
-				4230FFB01FA5651F008DF37F /* ICLogInViewController.m in Sources */,
+				426E89B11FA84FCF00BE665B /* ICLoginViewController.m in Sources */,
 				4230FF7C1FA56249008DF37F /* AppDelegate.m in Sources */,
 				426E89971FA742FE00BE665B /* ICInputMenuView.m in Sources */,
 			);
