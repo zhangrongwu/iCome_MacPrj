@@ -9,5 +9,5 @@
 #import <Cocoa/Cocoa.h>
 
 @interface ICMessageView : NSView
-
+@property (nonatomic, strong)NSTableView *tableView;
 @end

@@ -24,6 +24,7 @@
 		426E89B11FA84FCF00BE665B /* ICLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426E89B01FA84FCF00BE665B /* ICLoginViewController.m */; };
 		426E89B41FA8506600BE665B /* ICNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 426E89B31FA8506600BE665B /* ICNetworkManager.m */; };
 		426E89B71FA850C300BE665B /* ICNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 426E89B61FA850C300BE665B /* ICNetworkHelper.m */; };
+		426E8C8B1FA8733700BE665B /* ICLoginWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426E8C8A1FA8733700BE665B /* ICLoginWindowController.m */; };
 		CFB9E398039397CD0F647423 /* libPods-iCome_MacPrj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 236A58750EA3B37611B559DD /* libPods-iCome_MacPrj.a */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +116,8 @@
 		426E89B31FA8506600BE665B /* ICNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICNetworkManager.m; sourceTree = "<group>"; };
 		426E89B51FA850C300BE665B /* ICNetworkHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICNetworkHelper.h; sourceTree = "<group>"; };
 		426E89B61FA850C300BE665B /* ICNetworkHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICNetworkHelper.m; sourceTree = "<group>"; };
+		426E8C891FA8733700BE665B /* ICLoginWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICLoginWindowController.h; sourceTree = "<group>"; };
+		426E8C8A1FA8733700BE665B /* ICLoginWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICLoginWindowController.m; sourceTree = "<group>"; };
 		C03FE56163CEF0A6F383B684 /* Pods-iCome_MacPrj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCome_MacPrj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iCome_MacPrj/Pods-iCome_MacPrj.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -335,6 +338,8 @@
 			children = (
 				426E89AF1FA84FCF00BE665B /* ICLoginViewController.h */,
 				426E89B01FA84FCF00BE665B /* ICLoginViewController.m */,
+				426E8C891FA8733700BE665B /* ICLoginWindowController.h */,
+				426E8C8A1FA8733700BE665B /* ICLoginWindowController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -464,6 +469,15 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
+				hi,
+				id,
+				it,
+				ja,
+				"pt-BR",
+				th,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = 4230FF6E1FA56249008DF37F;
 			productRefGroup = 4230FF781FA56249008DF37F /* Products */;
@@ -566,6 +580,7 @@
 				4230FFB61FA565B1008DF37F /* ICMainViewController.m in Sources */,
 				4230FFB91FA5F523008DF37F /* ICInputTextView.m in Sources */,
 				426E89B71FA850C300BE665B /* ICNetworkHelper.m in Sources */,
+				426E8C8B1FA8733700BE665B /* ICLoginWindowController.m in Sources */,
 				4230FF871FA56249008DF37F /* main.m in Sources */,
 				426E89911FA73C9B00BE665B /* ICMenuView.m in Sources */,
 				426E89941FA740E700BE665B /* ICInputView.m in Sources */,
