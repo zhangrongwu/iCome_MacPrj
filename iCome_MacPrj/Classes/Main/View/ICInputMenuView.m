@@ -62,8 +62,8 @@
 }
 
 - (void)fileAction:(id)sender {
-    
-    //    [self.window orderOut:nil];
+    [[NSOpenPanel openPanel] runModal];
+        //    [self.window orderOut:nil];
 }
 
 -(NSButton *)faceButton {
