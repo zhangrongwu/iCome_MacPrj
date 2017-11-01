@@ -49,7 +49,7 @@
     self.messageView.layer.backgroundColor = [NSColor cyanColor].CGColor;
     self.chatBoxView.layer.backgroundColor = [NSColor orangeColor].CGColor;
     self.inputView.layer.backgroundColor = [NSColor whiteColor].CGColor;
-    self.inputView.menuView.layer.backgroundColor = [NSColor blueColor].CGColor;
+    self.inputView.menuView.layer.backgroundColor = [NSColor lightGrayColor].CGColor;
     [self.menuView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view.mas_top);
         make.left.equalTo(self.view.mas_left);
@@ -86,11 +86,11 @@
     }];
     
     
-    [[ICNetworkManager sharedInstance] login:@{} success:^(id object) {
-        NSLog(@"ceshi");
-    } failure:^(NSError *error) {
-        NSLog(@"ceshi --- %@", error);
-    }];
+//    [[ICNetworkManager sharedInstance] login:@{} success:^(id object) {
+//        NSLog(@"ceshi");
+//    } failure:^(NSError *error) {
+//        NSLog(@"ceshi --- %@", error);
+//    }];
 }
 
 -(ICMenuView *)menuView {

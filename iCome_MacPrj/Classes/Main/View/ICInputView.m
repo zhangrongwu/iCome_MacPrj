@@ -24,7 +24,6 @@
 {
     if (self = [super initWithFrame:frameRect]) {
         [self addSubview:self.menuView];
-        [self addSubview:self.inputTextView];
         
         self.menuView.layer.backgroundColor = [NSColor blackColor].CGColor;
         
@@ -35,13 +34,29 @@
             make.height.mas_equalTo(MenuHeight);
         }];
         
-        [self.inputTextView mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.menuView.mas_bottom);
-            make.left.equalTo(self.mas_left);
-            make.right.equalTo(self.mas_right);
-            make.bottom.equalTo(self.mas_bottom);
-            make.height.mas_equalTo(self.frame.size.height - MenuHeight);
-        }];
+        NSScrollView * scrollView = [[NSScrollView alloc] init];
+        [scrollView setBorderType:NSNoBorder];
+        scrollView.hasVerticalScroller  = YES;
+        // 1.2.设置frame并自动布局
+        scrollView.frame   = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height - MenuHeight);
+        scrollView.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
+        [self addSubview:scrollView];
+        
+        _inputTextView = [[ICInputTextView alloc] init];
+        _inputTextView.frame = scrollView.bounds;
+        _inputTextView.inDelegate = self;
+        
+        [_inputTextView setMinSize:NSMakeSize(0.0, self.frame.size.height)];
+        [_inputTextView setMaxSize:NSMakeSize(FLT_MAX, FLT_MAX)];
+        [_inputTextView setVerticallyResizable:YES];
+        [_inputTextView setHorizontallyResizable:YES];
+        [_inputTextView setAutoresizingMask:NSViewWidthSizable];
+        [[_inputTextView textContainer] setContainerSize:NSMakeSize(FLT_MAX, FLT_MAX)];
+        [[_inputTextView textContainer] setWidthTracksTextView:YES];
+        [_inputTextView setFont:[NSFont fontWithName:@"Helvetica" size:14]];
+        
+        scrollView.contentView.documentView = _inputTextView;
+        
     }
     return self;
 }
@@ -58,41 +73,5 @@
     }
     return _menuView;
 }
-
--(ICInputTextView *)inputTextView {
-    if (!_inputTextView) {
-        _inputTextView = [[ICInputTextView alloc] initWithFrame:CGRectMake(20, 20, self.frame.size.width, self.frame.size.height)];
-        _inputTextView.inDelegate = self;
-        
-        NSScrollView * scrollview = [[NSScrollView alloc] initWithFrame:CGRectMake(20, 20, self.frame.size.width, self.frame.size.height)];
-        [scrollview setBorderType:NSNoBorder];
-        [scrollview setHasVerticalRuler:YES];
-        [scrollview setHasHorizontalScroller:YES];
-        [scrollview setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
-        
-        [_inputTextView setMinSize:NSMakeSize(0.0, self.frame.size.height)];
-        [_inputTextView setMaxSize:NSMakeSize(FLT_MAX, FLT_MAX)];
-        [_inputTextView setVerticallyResizable:YES];
-        [_inputTextView setHorizontallyResizable:YES];
-        [_inputTextView setAutoresizingMask:NSViewWidthSizable];
-        [[_inputTextView textContainer] setContainerSize:NSMakeSize(FLT_MAX, FLT_MAX)];
-        [[_inputTextView textContainer] setWidthTracksTextView:YES];
-        [_inputTextView setFont:[NSFont fontWithName:@"Helvetica" size:14]];
-        
-        [scrollview setDocumentView:_inputTextView];
-        [self addSubview:scrollview];
-        
-        [scrollview mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.menuView.mas_bottom);
-            make.left.equalTo(_inputTextView.mas_left);
-            make.right.equalTo(self.mas_right);
-            make.bottom.equalTo(self.mas_bottom);
-            make.height.mas_equalTo(self.frame.size.height - MenuHeight);
-        }];
-        
-    }
-    return _inputTextView;
-}
-
 
 @end
