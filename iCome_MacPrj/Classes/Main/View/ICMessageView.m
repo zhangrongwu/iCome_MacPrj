@@ -7,13 +7,15 @@
 //
 
 #import "ICMessageView.h"
+#import "ICMessageTableHeaderView.h"
 
 @interface ICMessageView()<NSTabViewDelegate, NSTableViewDataSource>
+
+@property (nonatomic, strong)ICMessageTableHeaderView *tableHeaderView;
 
 @end
 
 @implementation ICMessageView
-
 
 - (instancetype)initWithFrame:(NSRect)frameRect {
     if (self = [super initWithFrame:frameRect]) {
@@ -34,6 +36,7 @@
         // 2.1.设置代理和数据源
         tableView.delegate          = self;
         tableView.dataSource        = self;
+        [tableView setHeaderView:[[NSTableHeaderView alloc] initWithFrame:CGRectZero]];
         // 2.2.设置为ScrollView的documentView
         scrollView.contentView.documentView = tableView;
         
@@ -41,9 +44,12 @@
         NSTableColumn *columen1     = [[NSTableColumn alloc] initWithIdentifier:@"columen1"];
         // 3.1.设置最小的宽度
 //        columen1.minWidth           = self.bounds.size.width;
-        columen1.maxWidth           = self.bounds.size.width-20;
+//        columen1.maxWidth           = self.bounds.size.width;
+        // cell 左右滑动问题 左右移动的原因，无非就是tableviewcell的宽度超过了tableview的宽度，或者是tableview的contentsize大于了tableview的宽度，检查一下。。。
+        columen1.width = self.bounds.size.width-3;
+        columen1.title = @"";
         // 3.2.允许用户调整宽度
-        columen1.resizingMask       = NSTableColumnUserResizingMask;
+        columen1.resizingMask       = NSTableColumnNoResizing;
         // 3.3.添加到表视图
         [tableView addTableColumn:columen1];
         
@@ -61,12 +67,6 @@
     return self;
 }
 
-- (void)drawRect:(NSRect)dirtyRect {
-    [super drawRect:dirtyRect];
-    
-    // Drawing code here.
-}
-
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
     return 40;
 }
@@ -82,11 +82,13 @@
     // 1.1.判断是哪一列
     if ([tableColumn.identifier isEqualToString:@"columen1"]) {
         view.stringValue    = [NSString stringWithFormat:@"第1列的第%ld个CellCellCellCellCellCellCellCellCellCellCell",row + 1];
-    }else if ([tableColumn.identifier isEqualToString:@"columen2"]) {
-        view.stringValue    = [NSString stringWithFormat:@"第2列的第%ld个Cell",row + 1];
-    }else {
-        view.stringValue    = [NSString stringWithFormat:@"不知道哪列的第%ld个Cell",row + 1];
     }
+    
+//    else if ([tableColumn.identifier isEqualToString:@"columen2"]) {
+//        view.stringValue    = [NSString stringWithFormat:@"第2列的第%ld个Cell",row + 1];
+//    }else {
+//        view.stringValue    = [NSString stringWithFormat:@"不知道哪列的第%ld个Cell",row + 1];
+//    }
     return view;
 }
 
@@ -97,6 +99,13 @@
 
 - (nullable id)tableView:(NSTableView *)tableView objectValueForTableColumn:(nullable NSTableColumn *)tableColumn row:(NSInteger)row {
     return nil;
+}
+
+-(ICMessageTableHeaderView *)tableHeaderView {
+    if (!_tableHeaderView) {
+        _tableHeaderView = [[ICMessageTableHeaderView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, 40)];
+    }
+    return _tableHeaderView;
 }
 
 @end

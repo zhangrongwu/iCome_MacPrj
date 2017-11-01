@@ -11,9 +11,11 @@
 #import "ICChatBoxView.h"
 #import "ICMenuView.h"
 #import "ICInputView.h"
+#import "ICMessageTableHeaderView.h"
 #define WINDOWH
 @interface ICMainViewController ()
 @property (nonatomic, strong)ICMenuView *menuView;
+@property (nonatomic, strong)ICMessageTableHeaderView *headerView;
 @property (nonatomic, strong)ICMessageView *messageView;
 @property (nonatomic, strong)ICChatBoxView *chatBoxView;
 @property (nonatomic, strong)ICInputView *inputView;
@@ -38,8 +40,8 @@
     [super viewDidLoad];
     // Do view setup here.
     NSLog(@"主页面");
-    self.view.layer.backgroundColor = [NSColor redColor].CGColor;
     [self.view addSubview:self.menuView];
+    [self.view addSubview:self.headerView];
     [self.view addSubview:self.messageView];
     [self.view addSubview:self.chatBoxView];
     [self.view addSubview:self.inputView];
@@ -55,8 +57,15 @@
         make.width.mas_equalTo(70);
     }];
     
-    [self.messageView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.headerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view.mas_top);
+        make.left.equalTo(self.menuView.mas_right);
+        make.width.mas_equalTo(260);
+        make.height.mas_equalTo(40);
+    }];
+    
+    [self.messageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.headerView.mas_bottom);
         make.left.equalTo(self.menuView.mas_right);
         make.bottom.equalTo(self.view.mas_bottom);
         make.width.mas_equalTo(260);
@@ -91,9 +100,17 @@
     return _menuView;
 }
 
+-(ICMessageTableHeaderView *)headerView {
+    if (!_headerView) {
+        _headerView = [[ICMessageTableHeaderView alloc] initWithFrame:CGRectMake(20, 20, 260, 40)];
+        _headerView.layer.backgroundColor = [NSColor whiteColor].CGColor;
+    }
+    return _headerView;
+}
+
 -(ICMessageView *)messageView {
     if (!_messageView) {
-        _messageView = [[ICMessageView alloc] initWithFrame:CGRectMake(20, 20, self.view.frame.size.width - 40, self.view.frame.size.height - 100)];
+        _messageView = [[ICMessageView alloc] initWithFrame:CGRectMake(20, 20, 260, self.view.frame.size.height - 100)];
     }
     return _messageView;
 }

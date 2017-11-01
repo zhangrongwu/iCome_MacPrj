@@ -25,6 +25,8 @@
 		426E89B41FA8506600BE665B /* ICNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 426E89B31FA8506600BE665B /* ICNetworkManager.m */; };
 		426E89B71FA850C300BE665B /* ICNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 426E89B61FA850C300BE665B /* ICNetworkHelper.m */; };
 		426E8C8B1FA8733700BE665B /* ICLoginWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426E8C8A1FA8733700BE665B /* ICLoginWindowController.m */; };
+		426E8C8E1FA9620C00BE665B /* ICMessageSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 426E8C8D1FA9620C00BE665B /* ICMessageSearchTextField.m */; };
+		426E8C911FA9640B00BE665B /* ICMessageTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 426E8C901FA9640B00BE665B /* ICMessageTableHeaderView.m */; };
 		CFB9E398039397CD0F647423 /* libPods-iCome_MacPrj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 236A58750EA3B37611B559DD /* libPods-iCome_MacPrj.a */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +120,10 @@
 		426E89B61FA850C300BE665B /* ICNetworkHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICNetworkHelper.m; sourceTree = "<group>"; };
 		426E8C891FA8733700BE665B /* ICLoginWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICLoginWindowController.h; sourceTree = "<group>"; };
 		426E8C8A1FA8733700BE665B /* ICLoginWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICLoginWindowController.m; sourceTree = "<group>"; };
+		426E8C8C1FA9620C00BE665B /* ICMessageSearchTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICMessageSearchTextField.h; sourceTree = "<group>"; };
+		426E8C8D1FA9620C00BE665B /* ICMessageSearchTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICMessageSearchTextField.m; sourceTree = "<group>"; };
+		426E8C8F1FA9640B00BE665B /* ICMessageTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICMessageTableHeaderView.h; sourceTree = "<group>"; };
+		426E8C901FA9640B00BE665B /* ICMessageTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICMessageTableHeaderView.m; sourceTree = "<group>"; };
 		C03FE56163CEF0A6F383B684 /* Pods-iCome_MacPrj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCome_MacPrj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iCome_MacPrj/Pods-iCome_MacPrj.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -247,6 +253,10 @@
 				426E89961FA742FE00BE665B /* ICInputMenuView.m */,
 				4230FFB71FA5F523008DF37F /* ICInputTextView.h */,
 				4230FFB81FA5F523008DF37F /* ICInputTextView.m */,
+				426E8C8C1FA9620C00BE665B /* ICMessageSearchTextField.h */,
+				426E8C8D1FA9620C00BE665B /* ICMessageSearchTextField.m */,
+				426E8C8F1FA9640B00BE665B /* ICMessageTableHeaderView.h */,
+				426E8C901FA9640B00BE665B /* ICMessageTableHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -574,6 +584,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				426E896C1FA6ED1600BE665B /* ICMessageView.m in Sources */,
+				426E8C8E1FA9620C00BE665B /* ICMessageSearchTextField.m in Sources */,
+				426E8C911FA9640B00BE665B /* ICMessageTableHeaderView.m in Sources */,
 				4230FFB31FA56582008DF37F /* ICWindowController.m in Sources */,
 				426E89B41FA8506600BE665B /* ICNetworkManager.m in Sources */,
 				426E896F1FA6ED5100BE665B /* ICChatBoxView.m in Sources */,
