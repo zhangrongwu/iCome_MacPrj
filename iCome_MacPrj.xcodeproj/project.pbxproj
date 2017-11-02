@@ -753,7 +753,6 @@
 			baseConfigurationReference = C03FE56163CEF0A6F383B684 /* Pods-iCome_MacPrj.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = iCome_MacPrj/iCome_MacPrj.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = HXA3E8963G;
@@ -771,7 +770,6 @@
 			baseConfigurationReference = 1B498F73E0AB2D7767E236B1 /* Pods-iCome_MacPrj.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = iCome_MacPrj/iCome_MacPrj.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = HXA3E8963G;

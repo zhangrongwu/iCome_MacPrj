@@ -19,8 +19,8 @@
     return manager;
 }
 -(void)setNetworkHelper {
-//    [ICNetworkHelper setValue:@"" forHTTPHeaderField:@"token"];
-//    [ICNetworkHelper setValue:@"" forHTTPHeaderField:@"auth"];
+    [ICNetworkHelper setValue:@"" forHTTPHeaderField:@"token"];
+    [ICNetworkHelper setValue:@"" forHTTPHeaderField:@"auth"];
     [ICNetworkHelper setSecurityPolicy:[ICNetworkManager customSecurityPolicy]];
     [ICNetworkHelper setRequestTimeoutInterval:50.f];
 }
@@ -58,7 +58,9 @@
 - (void)login:(NSDictionary *)param
       success:(HttpSuccessCompletionHandle)success
       failure:(HttpFailureCompletionHandle)failure {
-    NSString *url = [self appendRequestBaseURL:@"icomeapps/ios/dev/version.json"];
+//    NSString *url = [self appendRequestBaseURL:@"icomeapps/ios/dev/version.json"];
+    NSString *url = @"https://www.baidu.com";
+
     [ICNetworkHelper GET:url parameters:param success:^(id responseObject) {
         if (success) {
             success(responseObject);

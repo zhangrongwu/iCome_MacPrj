@@ -13,12 +13,14 @@
 #import "ICInputView.h"
 #import "ICMessageTableHeaderView.h"
 #define WINDOWH
-@interface ICMainViewController ()
+@interface ICMainViewController ()<SRWebSocketDelegate>
 @property (nonatomic, strong)ICMenuView *menuView;
 @property (nonatomic, strong)ICMessageTableHeaderView *headerView;
 @property (nonatomic, strong)ICMessageView *messageView;
 @property (nonatomic, strong)ICChatBoxView *chatBoxView;
 @property (nonatomic, strong)ICInputView *inputView;
+
+@property (nonatomic, strong)SRWebSocket *webSocket;
 @end
 
 @implementation ICMainViewController
@@ -86,11 +88,51 @@
     }];
     
     
-//    [[ICNetworkManager sharedInstance] login:@{} success:^(id object) {
-//        NSLog(@"ceshi");
-//    } failure:^(NSError *error) {
-//        NSLog(@"ceshi --- %@", error);
-//    }];
+    [[ICNetworkManager sharedInstance] login:@{} success:^(id object) {
+        NSLog(@"ceshi");
+    } failure:^(NSError *error) {
+        NSLog(@"ceshi --- %@", error);
+    }];
+    
+    _webSocket = [[SRWebSocket alloc] initWithURL:[NSURL URLWithString:@"https://websocket-icome.enncloud.cn:6303"]];
+    _webSocket.delegate = self;
+    
+    self.title = @"Opening Connection...";
+    [_webSocket open];
+}
+///--------------------------------------
+#pragma mark - SRWebSocketDelegate
+///--------------------------------------
+
+- (void)webSocketDidOpen:(SRWebSocket *)webSocket;
+{
+    NSLog(@"Websocket Connected");
+    self.title = @"Connected!";
+}
+
+- (void)webSocket:(SRWebSocket *)webSocket didFailWithError:(NSError *)error;
+{
+    NSLog(@":( Websocket Failed With Error %@", error);
+    
+    self.title = @"Connection Failed! (see logs)";
+    _webSocket = nil;
+}
+
+- (void)webSocket:(SRWebSocket *)webSocket didReceiveMessageWithString:(nonnull NSString *)string
+{
+    NSLog(@"Received \"%@\"", string);
+}
+
+- (void)webSocket:(SRWebSocket *)webSocket didCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean;
+{
+    NSLog(@"WebSocket closed");
+    self.title = @"Connection Closed! (see logs)";
+    _webSocket = nil;
+}
+
+- (void)webSocket:(SRWebSocket *)webSocket didReceivePong:(NSData *)pongPayload;
+{
+    NSLog(@"WebSocket received pong");
 }
 
 -(ICMenuView *)menuView {
